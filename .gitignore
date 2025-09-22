@@ -1,0 +1,34 @@
+agent_env/
+.agent_env/
+
+
+#Ignoring Python cache files, compiled files, and distribution folders.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+
+
+.env
+.env.*
+*.env
+
+#IDE ignoring editor specific setting files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+#meta deta files are ignored here
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.log
+logs/
+
+
+.streamlit/
