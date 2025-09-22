@@ -1,0 +1,29 @@
+{
+    "name": "Standard Research and Present Workflow",
+    "steps": [
+        {
+            "step": 1,
+            "agent": "Researcher",
+            "input_key": "initial_query",
+            "output_key": "research_data"
+        },
+        {
+            "step": 2,
+            "agent": "Summarizer",
+            "input_key": "research_data",
+            "output_key": "summary"
+        },
+        {
+            "step": 3,
+            "agent": "Critic",
+            "input_key": ["research_data", "summary"],
+            "output_key": "critique"
+        },
+        {
+            "step": 4,
+            "agent": "Presenter",
+            "input_key": ["summary", "critique"],
+            "output_key": "final_report"
+        }
+    ]
+}
